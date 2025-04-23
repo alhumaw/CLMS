@@ -287,9 +287,9 @@ def load_k8s_client() -> tuple:
 
 def main():
     # init kube / parse cmdline.
-    core_api, apps_api = load_k8s_client()
     args = parse_command_line()
-    
+    core_api, apps_api = load_k8s_client()
+
     # validate user input.
     all_namespaces = find_all_namespaces(core_api)
     namespace_list = [n.strip() for n in args.namespaces.split(",")] 
