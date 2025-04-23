@@ -1,6 +1,6 @@
 ## Cluster Lifecycle Management System
 This research introduces the Cluster Lifecycle Management System (CLMS), 
-a preemptive approach to container lifecycle management in Kubernetes
+a preemptive approach to container lifecycle management in Kubernetes.
 
 ### Running the program
 In order to run this program, you will need to set your `KUBECONFIG` directory as an environment variable:
@@ -21,12 +21,12 @@ Targets the namespace `martian-bank`, cycles all deployments within that namespa
 python3 clms.py -n martian-bank
 ```
 
-Targets the namespace `martian-bank`, excludes any deployment containing the string `mongodb`
+Targets the namespace `martian-bank`, excludes any deployment containing the string `mongodb`.
 ```shell
 python3 clms.py -n martian-bank -e mongodb
 ```
 
-Targets the namespaces `martian-bank` and `sock-shop`. Excludes any deployment containing the strings `mongodb`, `sql`, `database`
+Targets the namespaces `martian-bank` and `sock-shop`. Excludes any deployment containing the strings `mongodb`, `sql`, `database`.
 ```shell
 python3 clms.py -n 'martian-bank,sock-shop' -e 'mongodb,sql,database'
 ```
@@ -71,7 +71,7 @@ usage: clms.py [-h] -n NAMESPACES [-e EXCLUDE] [-d]
 
 
 This research introduces the Cluster Lifecycle Management System (CLMS),
-a preemptive approach to container lifecycle management in Kubernetes
+a preemptive approach to container lifecycle management in Kubernetes.
 
 Creation date: 04.23.25 - alhumaw
 
