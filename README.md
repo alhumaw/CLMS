@@ -1,2 +1,1 @@
-# CLMS
-Cluster Lifecycle Management System
+# Cluster Lifecycle Management System
