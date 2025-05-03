@@ -9,6 +9,12 @@ In order to run this program, you will need to set your `KUBECONFIG` directory a
 ```shell
 export KUBECONFIG=/etc/kubernetes/admin.conf
 ```
+>Using microk8s? Grab your config file and set the environment variable this way:
+```shell
+microk8s config > $HOME/.kube/microk8s.conf
+export KUBECONFIG=$HOME/.kube/microk8s.conf
+```
+
 ### Execution syntax
 This example accepts the following input parameters.
 | Parameter | Purpose |
